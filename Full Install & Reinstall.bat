@@ -54,8 +54,7 @@ echo y | .\Miniconda\Scripts\conda.exe install git==2.41.0 -c conda-forge
 echo y | .\Miniconda\Scripts\conda.exe install ffmpeg==6.0.0 -c conda-forge
 echo y | .\Miniconda\Scripts\conda.exe install cudatoolkit==11.8.0 -c conda-forge
 
-git clone https://github.com/s0md3v/roop.git Roop
-git -C Roop checkout 43a8d9f7f371d083852183ea752ef8cdd944dab3
+git clone https://github.com/P2Enjoy/sd-webui-roop-uncensored Roop
 
 if exist ".\Roop\roop\core_temporary.py" del /f /q ".\Roop\roop\core_temporary.py"
 for /f "delims=: tokens=1,*" %%a in ('findstr /n .* ".\Roop\roop\core.py"') do (
